@@ -25,7 +25,8 @@ background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 37%, rgba(135,135,135,
 background: linear-gradient(180deg, rgba(0,0,0,1) 37%, rgba(135,135,135,1) 80%, rgba(255,255,255,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
-a:visited{
+
+a, a:visited{
    color: var(--white)
 }
 h1{
