@@ -1,29 +1,48 @@
 *{
    box-sizing:border-box;
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style-type: none;
 }
 :root{
-   --sectionColor: #2A9D8F;
-   --titleColor: #FFF;
+   --white: #fff;
+   --black: #000;
+   --green: #9DC183;
+   --grey: #ebe9da;
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     font-family:'Roboto',sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
+    background-color: var(--grey);
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     padding: 1rem;
+    font-weight: bolder;
 }
 
 section{
-background-color: var(--sectionColor);
+display: flex;
 text-align: center;
-width: 70%;
-margin: 5% auto;
+width: 100%;
+margin: 0 auto 0 auto;
+height: 100vh;
+}
+
+.box{
+   background-color: var(--white);
+   color: var(--black);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 10px;
+   width: 60%;
+   margin: auto;
 }
 /* 
 
@@ -55,27 +74,16 @@ ANIMATIONS
 
 /* 
 
-NAV 
-
-*/
- nav>ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-    border: 1px solid black;
- }
-
-/* 
-
 SECTION TITLE 
 
 */
  .text-nom{
     padding: .5rem;
  }
-
- #title>h1{
+.marg{
+   margin-top: 10%;
+}
+ #title div>h1{
     animation: apparition .8s .2s ease-out forwards;
  }
 
@@ -86,6 +94,7 @@ SECTION TITLE
  .stage-date{
     animation: apparition .8s .8s ease-out forwards;
  }
+
 .animation-opacity{
     opacity: 0;
     transform: translateY(-30px);
@@ -96,21 +105,62 @@ SECTION TITLE
     align-items: center;
     flex-direction: column;
     text-align: center;
+
     width: 100%;
     height: 100vh;
-    background-color: var(--titleColor);
     margin: 0;
+    background-image: url("../assets/bg.jpg"); /* Image trouvée sur pexels de l'artiste "lil artsy" */
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
  }
 
+ .overlay-bg{
+      background-color: rgba(0, 0,0,.7);
+      height: 100%;
+      width: 100%;
+ }
+
+#tests > span{
+   font-size: 100px;
+   color:var(--black);
+   background-color: var(--white);
+   border-radius: 100%;
+   position: absolute;
+   bottom: 5vh;
+}
 /* 
 
 SECTION ABOUTE ME
 
 */
- #aboutme{
+#skills{
+   background-color: var(--white);
+}
+#skills .box{
+   background-color: white;
+   color: var(--black);
+}
 
-    /* width: 100%; */
-    /* height: 50vh; */
+ .box>h1{
+   padding: 100px;
  }
+.box p, .box ul{
+   padding-bottom: 100px;
+}
+/* 
 
+SECTION SKILLS
 
+*/
+
+/* 
+
+FOOTER
+
+*/
+
+footer{
+   width: 100%;
+background-color: var(--black);
+}
